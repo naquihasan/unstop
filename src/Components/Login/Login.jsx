@@ -83,7 +83,6 @@ const Login = () => {
 
             const data = await response.json();  // response parse karna
             console.log(data, '===response===');
-
             localStorage.setItem("formData", JSON.stringify(data));
             console.log("form data saved:", data);
             navigate("/home");
